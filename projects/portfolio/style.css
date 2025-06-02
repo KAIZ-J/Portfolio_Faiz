@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: "Sour Gummy", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: #444;
+}
+
+.follow-dropdown {
+  position: relative;
+}
+
+.follow-dropdown button {
+  background: #c4c8c5;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-family: "Sour Gummy", sans-serif;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: #e6dfdf;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: black;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content a:hover {
+  background: #ccc;
+}
+
+.follow-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-family: "Kablammo", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-shadow: #aaaaaa 0 0 10px;
+}
+.hero h1:after{
+  font-family: "Kablammo", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-shadow: #aaaaaa 0 0 10px;
+  content: '';
+      animation: animateText 1.5s forwards;
+}
+    @keyframes animateText {
+      0%{content:'';}
+      10%{content:'H';}
+       20%{content:'He';}
+       30%{content:'Hey';}
+       40%{content:'Hey I';}
+       50%{content:'Hey It';}
+       60%{content:'Hey Its';}
+       70%{content:'Hey Its F';}
+       80%{content:'Hey Its, Fa';}
+       90%{content:'Hey Its, Fai';}
+       100%{content:'Hey Its, Faiz 👋';}
+    }
+.hero p {
+  font-family: "Atma", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.project-button {
+  background: #c4c8c5;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+.project-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #888;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#but {
+  display: none;
+  border-radius: 2px;
+  border: none;
+  margin: 10px;
+}
+#containerskills {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 0 30px;
+}
+@media (max-width: 768px) {
+  .project-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+  .hero {
+    padding: 30px 10px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  #but {
+    display: block;
+  }
+  .navbar {
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 0 0 10px 10px;
+    gap: 40px;
+    white-space: nowrap;
+  }
+  #containerskills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links a {
+    margin-left: -10px;
+    gap: 70px;
+  }
+.follow-dropdown:hover .dropdown-content {
+  display: flex;
+  left: 30px;
+  right: -150px;
+}
+  .hero h1:after{
+  font-size: 2rem;}
+}
+
+#but img {
+  width: 25px;
+}
+
+
+
+.follow-icon {
+  width: 25px;
+  height: 25px;
+}

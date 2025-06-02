@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts</title>
+  <link rel="stylesheet" href="/projects/portfolio/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kablammo|Sour Gummy|Atma">
+      <style>
+      form {
+        max-width: 600px;
+        padding: 20px;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        font-family: Sour Gummy;
+        background-color: rgb(12, 12, 12);
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      fieldset {
+        border: none;
+        margin-bottom: 20px;
+      }
+      legend {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea,
+      .btn {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 15px;
+      }
+
+      .btn:hover {
+        background-color: rgb(151, 210, 228);
+      }
+      .action-buttons {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      #reason {
+        resize: vertical;
+        max-height: 200px;
+        min-height: 40px;
+      }
+      #age {
+        display: flex;
+        gap: 10px;
+      }
+      footer {
+        margin-top: 85px;
+      }
+      input,
+      select,
+      textarea {
+        background-color: rgb(196, 193, 193);
+      }
+     
+      #container-form{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width:768px) {
+ #container-form{ margin-left: 10px;
+ margin-right: 10px;
+ margin-top: 10px;
+      } }
+
+      .nav-links a:nth-child(5){
+color: rgb(54, 44, 197);
+       }
+    </style>
+
+
+
+</head>
+
+<body>
+    <button id="but" type="button" onclick="tgl()">
+   <img id="nav-icon" src="/projects/portfolio/assets/close.png" alt="" />
+  </button>
+  <nav class="navbar">
+
+    <a href="#" class="logo">
+      <img src="/projects/portfolio/assets/1000242016-removebg-preview.png" alt="logo" />
+    </a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/projects/portfolio/pages/abt.html">About Me</a>
+      <a href="/projects/portfolio/pages/skills.html">Skills</a>
+      <a href="/projects/portfolio/pages/projects.html">Projects</a>
+      <a href="/projects/portfolio/pages/contact.html">Contact</a>
+    </div>
+    <div class="follow-dropdown">
+      <button>Follow</button>
+      <div class="dropdown-content">
+         <a href="https://www.youtube.com/" target="_blank">
+<img src="/projects/portfolio/assets/video.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+<img src="/projects/portfolio/assets/tik-tok.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+<img src="/projects/portfolio/assets/social.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+<img src="/projects/portfolio/assets/twitter.png" class="follow-icon" alt="">
+
+        </a>
+      </div>
+    </div>
+  </nav> <br />
+
+  <div id="container-form">
+    
+  <form action="https://api.web3forms.com/submit" method="POST" id="form">
+    <input type="hidden" name="access_key" value="3473a7fa-5dbd-4bfb-afec-387ad59549f8">
+  <fieldset>
+    <legend id="legend">Send Your Information</legend>
+
+    <label for="first-name">Your Full name:</label>
+    <input type="text" name="Full Name" placeholder="Johnny Bough" id="first-name" required />
+    <br /><br />
+
+    <div id="age">
+      <label for="age">Age:</label>
+      <input type="number" name="Age" placeholder="18" id="age" required min="15" />
+      <label for="gender">Gender:</label>
+      <select id="gender" name="Gender">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+
+    <label for="email">Email:</label>
+    <input type="email" name="Email" placeholder="boughjohn@gmail.com" id="email" required />
+    <br />
+
+    <label for="reason">Your Message</label>
+    <textarea id="reason" name="Message" rows="10" maxlength="1500"></textarea>
+    <br />
+
+    <div class="action-buttons">
+      <button type="submit" class="btn">Submit</button>
+      <button type="reset" class="btn" id="reset">Reset</button>
+    </div>
+  </fieldset>
+</form>
+
+</div>   <br> <br> <br>
+  <footer>
+    <p>&copy; 2025 Fazi — No Copyright Intended</p>
+    
+  </footer>
+  <script src="/projects/portfolio/script.js"></script>
+</body>
+
+</html>

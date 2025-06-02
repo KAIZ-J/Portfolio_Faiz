@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+   
+    <link rel="stylesheet" href="/projects/portfolio/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kablammo|Sour Gummy|Atma">
+    <style>
+      #abt-me {
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: Sour gummy;
+        max-width: 600px;
+      }
+
+      #abt-photo {
+        width: 250px;
+        height: 250px;
+        border-radius: 50px;
+      }
+
+     
+     
+        #container-abt {
+          display: flex;
+          flex-direction: column;
+         justify-content: center;
+        align-items: center;
+           gap: 20px;
+        }
+       .nav-links a:nth-child(2){
+color: rgb(54, 44, 197);
+       }
+       @media (max-width:768px){
+
+        #abt-photo {
+          width: 150px;
+          height: 150px;
+          border-radius: 50px;
+        }
+       
+        #abt-me {
+          font-size: 0.8rem;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="but" type="button" onclick="tgl()">
+   <img id="nav-icon" src="/projects/portfolio/assets/close.png" alt="" />
+    </button>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img
+          src="/projects/portfolio/assets/1000242016-removebg-preview.png"
+          alt="logo"
+        />
+      </a>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/projects/portfolio/pages/abt.html">About Me</a>
+        <a href="/projects/portfolio/pages/skills.html">Skills</a>
+        <a href="/projects/portfolio/pages/projects.html">Projects</a>
+        <a href="/projects/portfolio/pages/contact.html">Contact</a>
+      </div>
+      <div class="follow-dropdown">
+        <button>Follow</button>
+        <div class="dropdown-content">
+           <a href="https://www.youtube.com/" target="_blank">
+<img src="/projects/portfolio/assets/video.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+<img src="/projects/portfolio/assets/tik-tok.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+<img src="/projects/portfolio/assets/social.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+<img src="/projects/portfolio/assets/twitter.png" class="follow-icon" alt="">
+
+        </a>
+        </div>
+      </div>
+    </nav>
+    <br />
+
+    <section>
+      <div id="container-abt">
+        <div id="container-abt1">
+          <img id="abt-photo" src="/projects/portfolio/assets/e4a84ffb30f6047e28b28481778690d3.jpg" alt="" />
+        </div>
+        <div id="conatiner-abt2">
+          <p id="abt-me">
+            Hey, I’m Faiz. I mess around with code and design in my free time —
+            mostly web stuff. I’m still learning, but I enjoy making websites.
+            Right now I’m focusing on: Building responsive layouts, Getting
+            better at JavaScript and Making my portfolio better bit by bit I
+            like keeping things simple, clean, and a little fun.
+            <br /><br />
+            ☎️ Contact
+            <br />
+            Phone: +251 912 345 678 <br />
+            Email: faiz@gmail/com
+          </p>
+       </div>
+      </div>
+    </section> <br> <br> <br>
+
+    <footer>
+      <p>&copy; 2025 Fazi — No Copyright Intended</p>
+     
+    
+    </footer>
+    <script src="/projects/portfolio/script.js"></script>
+  </body>
+</html>

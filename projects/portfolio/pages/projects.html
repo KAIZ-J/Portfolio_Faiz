@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="/projects/portfolio/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kablammo|Sour Gummy|Atma">
+      
+  <style>
+  
+  h1 {
+    color: beige;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: 'Kablammo', cursive;
+    text-shadow: 0px 0px 20px rgb(48, 46, 46);
+    color: rgb(173, 173, 173);
+    text-align: center;
+    font-size: 40px;
+  }
+
+  
+  .pr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .project-card {
+    background-color: #2e2d2d;
+    border-radius: 30px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .project-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .project-title {
+    font-size: 1.2em;
+    color: beige;
+    margin: 10px 0;
+  }
+
+  .project-btn {
+    background-color: #ccc;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin-top: auto;
+    font-family: 'Sour Gummy', sans-serif;
+  }
+
+  .project-btn a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .project-btn:hover {
+    transform: scale(1.1);
+    
+    text-shadow: 0 0 10px white;
+  }
+
+  @media (max-width: 768px) {
+  .pr {
+  flex-direction: column;
+  align-items: center;
+  margin-top: -60px;
+  margin-right: 10px;
+}
+
+.project-card {
+  width: 90%;
+}
+    
+  }
+  .nav-links a:nth-child(4){
+color: rgb(54, 44, 197);
+       }
+</style>
+    
+</head>
+
+<body>
+ <button id="but" type="button" onclick="tgl()">
+   <img id="nav-icon" src="/projects/portfolio/assets/close.png" alt="" />
+  </button>
+  <nav class="navbar">
+
+    <a href="#" class="logo">
+      <img src="/projects/portfolio/assets/1000242016-removebg-preview.png" alt="logo" />
+    </a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/projects/portfolio/pages/abt.html">About Me</a>
+      <a href="/projects/portfolio/pages/skills.html">Skills</a>
+      <a href="/projects/portfolio/pages/projects.html">Projects</a>
+      <a href="/projects/portfolio/pages/contact.html">Contact</a>
+    </div>
+    <div class="follow-dropdown">
+      <button>Follow</button>
+      <div class="dropdown-content">
+         <a href="https://www.youtube.com/" target="_blank">
+<img src="/projects/portfolio/assets/video.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+<img src="/projects/portfolio/assets/tik-tok.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+<img src="/projects/portfolio/assets/social.png" class="follow-icon" alt="">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+<img src="/projects/portfolio/assets/twitter.png" class="follow-icon" alt="">
+
+        </a>
+      </div>
+    </div>
+  </nav> <br />
+ <br /><br /><br />
+      <section class="pr">
+  <div class="project-card">
+    <img class="project-img" src="/projects/portfolio/assets/calculator.png" alt="Calculator">
+    <h1 class="project-title">Calculator</h1>
+    <button class="project-btn">
+      <a href="/projects/portfolio/projects/car/cacl.html" target="_blank">Go to Project</a>
+    </button>
+  </div>
+  
+  <div class="project-card">
+    <img class="project-img" src="/projects/portfolio/assets/repost.png" alt="Unit Converter">
+    <h1 class="project-title">Unit Converter</h1>
+    <button class="project-btn">
+      <a href="/projects/portfolio/projects/conv/pages/conv.html" target="_blank">Go to Project</a>
+    </button>
+  </div>
+  
+  
+  <div class="project-card">
+    <img src="/projects/portfolio/assets/icons8-scratch-96.png" alt=""> <br>
+
+    <h1 class="project-title">Math Quiz On Scratch</h1>
+    <button class="project-btn">
+      <a href="https://scratch.mit.edu/projects/1183112243" target="_blank">Go to Project</a>
+    </button>
+  </div>
+</section>
+  <footer>
+    <p>&copy; 2025 Fazi — No Copyright Intended</p>
+    
+  </footer>
+  <script src="/projects/portfolio/script.js"></script>
+</body>
+
+</html>
